@@ -1,0 +1,109 @@
+#billboard {
+    width: 970px;
+    height: 250px;
+    position: relative;
+    color: white;
+    font-family: sans-serif;
+
+    .a-background {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+    .container {
+        padding: 2%;
+        box-sizing: border-box;
+        display: flex;
+        height: 100%;
+
+        .o-billboard-left {
+            width: 50%;
+            height: 100%;
+            justify-content: space-between;
+            display: flex;
+            flex-direction: row;
+            span {
+                display: block;
+            }
+            .a-bmw-de-mey-hashtag {
+                margin-top: 0.5rem;
+            }
+        }
+        .o-billboard-right {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            .o-billboard-right-top {
+                display: flex;
+                justify-content: flex-end;
+                .m-billboard-right-text {
+                    width: 100%;
+                    span {
+                        display: block;
+                        text-align: right;
+                    }
+                    // .m-header {
+                    //     height: 100%;
+                    //     width: 100%;
+                    //     position: relative;
+                    //     .a-header {
+                    //         position: absolute;
+                    //         top: 0;
+                    //         left: 0;
+                    //         margin-top: 1rem;
+                    //         font-size: 27pt;
+                    //     }
+                    // }
+                    .m-header {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 100%;
+                    }
+                        .a-header {
+                            // position: absolute;
+                            // top: 0;
+                            // left: 0;
+                            // margin-top: 1rem;
+                            font-size: 27pt;
+                        }
+                }
+                .m-billboard-right-img {
+                    img {
+                        height: 68px;
+                        width: auto;
+                        margin-left: 1rem;
+                    }
+                }
+            }
+            // appointment
+            .o-billboard-bottom {
+                width: 76%;
+                align-self: flex-end;
+                .m-appointment-button {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-end;
+                    margin-top: 1rem;
+                    button {
+                        background-color: $color-button;
+                        color: $color-white;
+                        border: none;
+                        height: 38px;
+                        padding: 2px 15px;
+                        cursor: pointer;
+                    }
+                    .a-logo-de-mey {
+                        height: 78px;
+                        width: auto;
+                        margin-bottom: -23px;
+                    }
+                }
+            }
+        }
+    }
+}

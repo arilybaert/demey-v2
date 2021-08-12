@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "BMW Type Next";
+  src: url(BMWTypeNextLatin-Regular.otf) format("opentype");
+}
+* {
+  font-family: "BMW Type Next";
+}
+
+@-webkit-keyframes fading {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fading {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fading {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.a-fadin {
+  opacity: 0;
+  -webkit-animation: fading ease-in 1s;
+  animation: fading ease-in 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+.a-second {
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+
+.a-third {
+  -webkit-animation-delay: 1.4s;
+  animation-delay: 1.4s;
+}
+
+.a-forth {
+  -webkit-animation-delay: 2.1s;
+  animation-delay: 2.1s;
+}
+
+#billboard {
+  width: 970px;
+  height: 250px;
+  position: relative;
+  color: white;
+  font-family: sans-serif;
+}
+#billboard .a-background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+#billboard .container {
+  padding: 2%;
+  box-sizing: border-box;
+  display: flex;
+  height: 100%;
+}
+#billboard .container .o-billboard-left {
+  width: 50%;
+  height: 100%;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+}
+#billboard .container .o-billboard-left span {
+  display: block;
+}
+#billboard .container .o-billboard-left .a-bmw-de-mey-hashtag {
+  margin-top: 0.5rem;
+}
+#billboard .container .o-billboard-right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+#billboard .container .o-billboard-right .o-billboard-right-top {
+  display: flex;
+  justify-content: flex-end;
+}
+#billboard .container .o-billboard-right .o-billboard-right-top .m-billboard-right-text {
+  width: 100%;
+}
+#billboard .container .o-billboard-right .o-billboard-right-top .m-billboard-right-text span {
+  display: block;
+  text-align: right;
+}
+#billboard .container .o-billboard-right .o-billboard-right-top .m-billboard-right-text .m-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+#billboard .container .o-billboard-right .o-billboard-right-top .m-billboard-right-text .a-header {
+  font-size: 27pt;
+}
+#billboard .container .o-billboard-right .o-billboard-right-top .m-billboard-right-img img {
+  height: 68px;
+  width: auto;
+  margin-left: 1rem;
+}
+#billboard .container .o-billboard-right .o-billboard-bottom {
+  width: 76%;
+  align-self: flex-end;
+}
+#billboard .container .o-billboard-right .o-billboard-bottom .m-appointment-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 1rem;
+}
+#billboard .container .o-billboard-right .o-billboard-bottom .m-appointment-button button {
+  background-color: #0097d5;
+  color: #fff;
+  border: none;
+  height: 38px;
+  padding: 2px 15px;
+  cursor: pointer;
+}
+#billboard .container .o-billboard-right .o-billboard-bottom .m-appointment-button .a-logo-de-mey {
+  height: 78px;
+  width: auto;
+  margin-bottom: -23px;
+}
+
+/*# sourceMappingURL=app.css.map */

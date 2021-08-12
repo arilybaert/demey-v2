@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'BMW Type Next';
+    src: url(BMWTypeNextLatin-Regular.otf) format('opentype');
+}
+*{
+    font-family: 'BMW Type Next';
+}
+@import 'FX/fadein.scss';
+@import 'colors/colors.scss';
+@import 'billboard/billboard.scss';
